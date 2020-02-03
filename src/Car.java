@@ -40,5 +40,9 @@ public class Car extends Vehicle {
         return "Make: " + super.getMake() + " Color: " + super.getColor();
     }
 
+    public String drivenBy(Driver driver) {
+        return toString() + " is being driven by " + driver.getName();
+    }
+
 
 }

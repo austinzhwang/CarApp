@@ -12,6 +12,8 @@ public class Main {
         String make, color, q;
 
         Car c1 = new Car();
+        Driver d1 = new Driver();
+        d1.setName("Driver 1");
         c1.setColor("white");
         c1.setMake("BMW");
 
@@ -19,6 +21,7 @@ public class Main {
         Car c2 = new Car("Audi", "black");
         c2.setSpeed(40);
 
+        System.out.println(c1.drivenBy(d1));
         System.out.println(c1.start());
         System.out.println(c1.accelerate());
         System.out.println(c1.getSpeed());
