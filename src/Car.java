@@ -36,5 +36,9 @@ public class Car extends Vehicle {
         return "The " + super.getColor() + " " + super.getMake() + " ";
     }
 
+    public String getDescription() {
+        return "Make: " + super.getMake() + " Color: " + super.getColor();
+    }
+
 
 }
